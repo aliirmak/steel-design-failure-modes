@@ -1,0 +1,12 @@
+{
+  "name": "prepomax-calculix-runner",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y calculix-ccx libglu1-mesa libgl1 libglx-mesa0 libxrender1 libxext6 libsm6 libxcursor1 libxinerama1 libxi6 libxrandr2 && python -m pip install --upgrade pip gmsh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
